@@ -7,18 +7,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="418dp"
-        android:layout_height="74dp"
-        android:text="Moving Ball"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textSize="80px" />
 
-    <LinearLayout android:orientation ="vertical"
+    <LinearLayout
+        android:id="@+id/fragContainer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/fragContainer">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
     </LinearLayout>
+
 
 </LinearLayout>
