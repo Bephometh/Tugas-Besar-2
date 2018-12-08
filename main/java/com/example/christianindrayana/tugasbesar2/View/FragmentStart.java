@@ -7,7 +7,6 @@ import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +15,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.christianindrayana.tugasbesar2.Model.SensorReader;
-import com.example.christianindrayana.tugasbesar2.Presenter.MyPresenterTwo;
 import com.example.christianindrayana.tugasbesar2.R;
 import com.example.christianindrayana.tugasbesar2.Model.ThreadTime;
 import com.example.christianindrayana.tugasbesar2.Model.UIWrapperTime;
@@ -41,6 +39,7 @@ public class FragmentStart extends Fragment implements View.OnClickListener{
     protected ThreadTime threadTime;
     protected UIWrapperTime uiWrapperTime;
     protected int count=0;
+    public String scoreTime;
 
     public FragmentStart() {
         // Required empty public constructor
@@ -141,6 +140,7 @@ public class FragmentStart extends Fragment implements View.OnClickListener{
         if(this.presenter.moveableX() == holeX && this.presenter.moveableY()== holeY){
             this.sensorReader.stop();
             this.threadTime.stopTimer();
+            this.scoreTime = this.tvTime.getText().toString();
         }
     }
 

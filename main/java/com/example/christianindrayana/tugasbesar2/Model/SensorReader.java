@@ -7,7 +7,6 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
 import com.example.christianindrayana.tugasbesar2.Presenter.MyPresenter;
-import com.example.christianindrayana.tugasbesar2.Presenter.MyPresenterTwo;
 import com.example.christianindrayana.tugasbesar2.View.FragmentStart;
 import com.example.christianindrayana.tugasbesar2.View.MainActivity;
 
