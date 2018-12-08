@@ -9,20 +9,30 @@
 
     <LinearLayout
         android:id="@+id/fragStart"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <Button
+        <TextView
+            android:id="@+id/tvTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="START"
-            android:id="@+id/btn_start"></Button>
+            android:text="00:00"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"></Button>
 
         <ImageView
             android:id="@+id/iv_canvas"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_width="385dp"
+            android:layout_height="488dp" />
+
     </LinearLayout>
+
 
 </FrameLayout>
